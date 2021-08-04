@@ -1,6 +1,0 @@
-framework module SOILockerSDK {
-  umbrella header "SOILockerSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
