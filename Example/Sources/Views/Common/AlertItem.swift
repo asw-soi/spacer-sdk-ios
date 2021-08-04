@@ -5,7 +5,7 @@
 //  Created by Takehito Soi on 2021/06/22.
 //
 
-import SpacerSDK
+import SOILockerSDK
 import SwiftUI
 
 struct AlertItem: Identifiable {

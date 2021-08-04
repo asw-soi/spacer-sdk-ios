@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SpacerSDK
+import SOILockerSDK
 import SwiftUI
 
 extension SPRError {

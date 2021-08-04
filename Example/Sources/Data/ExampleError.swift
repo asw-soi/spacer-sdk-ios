@@ -5,7 +5,7 @@
 //
 
 import Foundation
-import SpacerSDK
+import SOILockerSDK
 
 class ExampleError {
     public var code: String

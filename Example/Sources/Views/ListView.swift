@@ -5,7 +5,7 @@
 //  Created by Takehito Soi on 2021/06/21.
 //
 
-import SpacerSDK
+import SOILockerSDK
 import SwiftUI
 
 struct ListView: View {

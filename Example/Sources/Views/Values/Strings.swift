@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SpacerSDK
+import SOILockerSDK
 
 class Strings {
     static let DefaultBtnText = "exec"

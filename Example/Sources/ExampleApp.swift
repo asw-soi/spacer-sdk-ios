@@ -5,7 +5,7 @@
 //  Created by Takehito Soi on 2021/07/19.
 //
 
-import SpacerSDK
+import SOILockerSDK
 import SwiftUI
 
 @main

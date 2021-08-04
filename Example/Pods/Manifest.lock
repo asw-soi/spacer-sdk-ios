@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.3)
+  - SOILockerSDK (0.1.0):
+    - Alamofire (~> 5.4.1)
+
+DEPENDENCIES:
+  - SOILockerSDK
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SOILockerSDK
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SOILockerSDK: e06770b668110b97a3280e9dc9ac42b1987c3c20
+
+PODFILE CHECKSUM: ef6bb56fb9f3a4b51c0f459ff6cd0aca228f274d
+
+COCOAPODS: 1.10.2

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,7 +31,7 @@
 		1E7325B426A4FE60003ABC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7325B326A4FE60003ABC50 /* Assets.xcassets */; };
 		1E7325B726A4FE60003ABC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7325B626A4FE60003ABC50 /* Preview Assets.xcassets */; };
 		1EB89A8C26A7A80700DB56BC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB89A8B26A7A80700DB56BC /* HeaderView.swift */; };
-		1EE8E82B26AFD9D80021DD48 /* SpacerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE8E82A26AFD9D80021DD48 /* SpacerSDK */; };
+		E0DF408ECCF81065A127C775 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0416605C63596887EC106D8 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +61,9 @@
 		1E7325B626A4FE60003ABC50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E7325B826A4FE60003ABC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EB89A8B26A7A80700DB56BC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		68E5AEF521461A7DCB2A1055 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		C2BDDC4F58C51A595F4860C8 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F0416605C63596887EC106D8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE8E82B26AFD9D80021DD48 /* SpacerSDK in Frameworks */,
+				E0DF408ECCF81065A127C775 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +197,8 @@
 			children = (
 				1E7325AE26A4FE5D003ABC50 /* Sources */,
 				1E7325AD26A4FE5D003ABC50 /* Products */,
+				5871C2111DCBE63B8B96014A /* Pods */,
+				A9AF23930976DE29FB03BE6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +232,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5871C2111DCBE63B8B96014A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2BDDC4F58C51A595F4860C8 /* Pods-Example.debug.xcconfig */,
+				68E5AEF521461A7DCB2A1055 /* Pods-Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9AF23930976DE29FB03BE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0416605C63596887EC106D8 /* Pods_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,18 +257,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E7325BB26A4FE60003ABC50 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				0F1C58700B080E173DBF3C29 /* [CP] Check Pods Manifest.lock */,
 				1E7325A826A4FE5D003ABC50 /* Sources */,
 				1E7325A926A4FE5D003ABC50 /* Frameworks */,
 				1E7325AA26A4FE5D003ABC50 /* Resources */,
+				0D559BD0276CCA675A98F82A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Example;
-			packageProductDependencies = (
-				1EE8E82A26AFD9D80021DD48 /* SpacerSDK */,
-			);
 			productName = Example;
 			productReference = 1E7325AC26A4FE5D003ABC50 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -273,9 +295,6 @@
 				Base,
 			);
 			mainGroup = 1E7325A326A4FE5D003ABC50;
-			packageReferences = (
-				1EE8E82926AFD9D80021DD48 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */,
-			);
 			productRefGroup = 1E7325AD26A4FE5D003ABC50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +315,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D559BD0276CCA675A98F82A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F1C58700B080E173DBF3C29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E7325A826A4FE5D003ABC50 /* Sources */ = {
@@ -448,6 +509,7 @@
 		};
 		1E7325BC26A4FE60003ABC50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BDDC4F58C51A595F4860C8 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +534,7 @@
 		};
 		1E7325BD26A4FE60003ABC50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E5AEF521461A7DCB2A1055 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,25 +579,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1EE8E82926AFD9D80021DD48 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tatsuya0/spacer-sdk-ios.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1EE8E82A26AFD9D80021DD48 /* SpacerSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1EE8E82926AFD9D80021DD48 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */;
-			productName = SpacerSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E7325A426A4FE5D003ABC50 /* Project object */;
 }
