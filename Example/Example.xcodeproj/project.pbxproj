@@ -30,8 +30,8 @@
 		1E7325B026A4FE5D003ABC50 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7325AF26A4FE5D003ABC50 /* ExampleApp.swift */; };
 		1E7325B426A4FE60003ABC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7325B326A4FE60003ABC50 /* Assets.xcassets */; };
 		1E7325B726A4FE60003ABC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7325B626A4FE60003ABC50 /* Preview Assets.xcassets */; };
+		1E8143B226BB63D800F2BD55 /* SpacerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8143B126BB63D800F2BD55 /* SpacerSDK */; };
 		1EB89A8C26A7A80700DB56BC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB89A8B26A7A80700DB56BC /* HeaderView.swift */; };
-		1ED7F93D26BA2507002BDE9B /* SpacerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED7F93C26BA2507002BDE9B /* SpacerSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED7F93D26BA2507002BDE9B /* SpacerSDK in Frameworks */,
+				1E8143B226BB63D800F2BD55 /* SpacerSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +244,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				1ED7F93C26BA2507002BDE9B /* SpacerSDK */,
+				1E8143B126BB63D800F2BD55 /* SpacerSDK */,
 			);
 			productName = Example;
 			productReference = 1E7325AC26A4FE5D003ABC50 /* Example.app */;
@@ -274,7 +274,7 @@
 			);
 			mainGroup = 1E7325A326A4FE5D003ABC50;
 			packageReferences = (
-				1ED7F93B26BA2507002BDE9B /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */,
+				1E8143B026BB63D800F2BD55 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */,
 			);
 			productRefGroup = 1E7325AD26A4FE5D003ABC50 /* Products */;
 			projectDirPath = "";
@@ -452,9 +452,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = RP2Q86SSUH;
+				DEVELOPMENT_TEAM = T224ADQS8D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -463,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacer.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soi.smart.locker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,9 +476,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0.3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
-				DEVELOPMENT_TEAM = RP2Q86SSUH;
+				DEVELOPMENT_TEAM = T224ADQS8D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -487,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacer.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soi.smart.locker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,20 +518,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1ED7F93B26BA2507002BDE9B /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */ = {
+		1E8143B026BB63D800F2BD55 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/spacer-dev/spacer-sdk-ios.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1ED7F93C26BA2507002BDE9B /* SpacerSDK */ = {
+		1E8143B126BB63D800F2BD55 /* SpacerSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1ED7F93B26BA2507002BDE9B /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */;
+			package = 1E8143B026BB63D800F2BD55 /* XCRemoteSwiftPackageReference "spacer-sdk-ios" */;
 			productName = SpacerSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

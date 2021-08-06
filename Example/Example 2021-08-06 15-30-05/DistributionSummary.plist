@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Example.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>1ED2DDA64D8969ED4F3425860A54402178DF919D</string>
+				<key>dateExpires</key>
+				<string>2022/08/05</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>T224ADQS8D.com.soi.smart.locker</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>T224ADQS8D</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>T224ADQS8D.com.soi.smart.locker</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Example.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>9bca72cb-96f8-4793-8b0b-b8f7b0ed0bf3</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.soi.smart.locker</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>T224ADQS8D</string>
+				<key>name</key>
+				<string>takehito soui</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

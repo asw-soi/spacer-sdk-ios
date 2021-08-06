@@ -11,11 +11,13 @@ import SwiftUI
 struct SimpleItemView: View {
     private let title: String
     private let desc: String
+    private let btnText: String
     private var runnable: () -> Void
 
-    init(title: String, desc: String, runnable: @escaping () -> Void) {
+    init(title: String, desc: String, btnText: String = Strings.DefaultBtnText, runnable: @escaping () -> Void) {
         self.title = title
         self.desc = desc
+        self.btnText = btnText
         self.runnable = runnable
     }
 
@@ -34,7 +36,7 @@ struct SimpleItemView: View {
             Button(action: {
                 runnable()
             }) {
-                Text(Strings.DefaultBtnText)
+                Text(self.btnText)
                     .font(.body)
             }
             .buttonStyle(BlackButtonStyle())

@@ -89,6 +89,22 @@ struct ListView: View {
                 Image(systemName: Strings.TabSPRLockerIcon)
                 Text(Strings.TabSPRLockerName)
             }
+
+            Group {
+                ScrollView(.vertical) {
+                    VStack(spacing: vStackSpacing) {
+                        HeaderView(title: Strings.SettingTitle)
+                        SimpleItemView(
+                            title: Strings.SettingPrivacyTitle, desc: Strings.SettingPrivacyDesc, btnText: Strings.SeeBtnText, runnable: openPrivacyPolicy
+                        )
+                    }
+                    .padding()
+                }
+            }
+            .tabItem {
+                Image(systemName: Strings.TabSettingIcon)
+                Text(Strings.TabSettingName)
+            }
         }
         .alert(item: $showingAlert) { item in item.alert }
     }
@@ -272,6 +288,11 @@ struct ListView: View {
                 failure: failure
             )
         }
+    }
+
+    private func openPrivacyPolicy() {
+        let url = URL(string: "https://soi-locker.s3.ap-northeast-1.amazonaws.com/privacy_policy.html")
+        UIApplication.shared.open(url!)
     }
 }
 

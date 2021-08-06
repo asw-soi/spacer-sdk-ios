@@ -10,11 +10,13 @@ import SpacerSDK
 
 class Strings {
     static let DefaultBtnText = "exec"
-
+    static let SeeBtnText = "see"
+    
     static let CBLockerService = "CB Locker Service"
     static let MyLockerService = "My Locker Service"
     static let SPRLockerService = "SPR Locker Service"
-
+    static let SettingTitle = "Setting"
+    
     static let TabCBLockerName = "CBLocker"
     static let TabCBLockerIcon = "1.square.fill"
 
@@ -24,6 +26,9 @@ class Strings {
     static let TabSPRLockerName = "SPRLocker"
     static let TabSPRLockerIcon = "3.square.fill"
 
+    static let TabSettingName = "Setting"
+    static let TabSettingIcon = "wrench.fill"
+    
     static let CBLockerScanTitle = "scan lockers"
     static let CBLockerScanDesc = "use bluetooth to detect the locker in front of you."
 
@@ -62,4 +67,7 @@ class Strings {
     static let SPRUnitGetTitle = "get locker units"
     static let SPRUnitGetDesc = "get multiple locker unit basic information."
     static let SPRUnitGetTextHint = "please enter unit ids separated by commas"
+    
+    static let SettingPrivacyTitle = "privacy policy"
+    static let SettingPrivacyDesc = "open your privacy policy on the web."
 }

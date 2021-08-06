@@ -22,9 +22,7 @@ struct ExampleApp: App {
     }
 
     init() {
-        if let baseURL = ProcessInfo.processInfo.environment["SPR_SDK_BASE_URL"] {
-            let config = SPRConfig(baseURL: baseURL)
-            SPR.configure(config: config)
-        }
+        let config = SPRConfig(baseURL: "https://api-vsv0ukl18tz6dm.spacer.co.jp/exApp")
+        SPR.configure(config: config)
     }
 }

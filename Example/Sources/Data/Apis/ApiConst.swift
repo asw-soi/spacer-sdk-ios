@@ -10,9 +10,9 @@ import Foundation
 class ApiConst {
     static let TimeoutInterval = 10.0
 
-    static let ApiBaseURL = ProcessInfo.processInfo.environment["SPR_API_BASE_URL"] ?? ""
-    static let ApiKey = ProcessInfo.processInfo.environment["SPR_API_KEY"] ?? ""
-    static let ApiUserId = ProcessInfo.processInfo.environment["SPR_API_USER_ID"] ?? ""
+    static let ApiBaseURL = "https://api-vsv0ukl18tz6dm.spacer.co.jp/exApi"
+    static let ApiKey = "a4Nl0kSacXVntemHgZMaHZr1p22XRTLfh3mb7yk"
+    static let ApiUserId = "-MgJHpotv87KkmFg6kis"
 }
 
 enum ApiPaths {
