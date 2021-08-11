@@ -16,6 +16,7 @@ struct ListView: View {
     private let myLockerService = SPR.myLockerService()
 
     private let vStackSpacing: CGFloat = 10.0
+    private let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
 
     @State private var showingAlert: AlertItem?
 
@@ -91,14 +92,20 @@ struct ListView: View {
             }
 
             Group {
-                ScrollView(.vertical) {
-                    VStack(spacing: vStackSpacing) {
-                        HeaderView(title: Strings.SettingTitle)
-                        SimpleItemView(
-                            title: Strings.SettingPrivacyTitle, desc: Strings.SettingPrivacyDesc, btnText: Strings.SeeBtnText, runnable: openPrivacyPolicy
-                        )
+                ZStack {
+                    ScrollView(.vertical) {
+                        VStack(spacing: vStackSpacing) {
+                            HeaderView(title: Strings.SettingTitle)
+                            SimpleItemView(
+                                title: Strings.SettingPrivacyTitle, desc: Strings.SettingPrivacyDesc, btnText: Strings.SeeBtnText, runnable: openPrivacyPolicy
+                            )
+                        }
+                        .padding()
                     }
-                    .padding()
+                    Text("version: \(version)")
+                        .padding(.bottom, 10)
+                        .padding(.trailing, 20)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                 }
             }
             .tabItem {
