@@ -69,5 +69,5 @@ class Strings {
     static let SPRUnitGetTextHint = "please enter unit ids separated by commas"
     
     static let SettingPrivacyTitle = "privacy policy"
-    static let SettingPrivacyDesc = "open your privacy policy on the web."
+    static let SettingPrivacyDesc = "open privacy policy on web."
 }

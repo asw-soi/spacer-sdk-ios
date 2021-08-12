@@ -99,13 +99,12 @@ struct ListView: View {
                             SimpleItemView(
                                 title: Strings.SettingPrivacyTitle, desc: Strings.SettingPrivacyDesc, btnText: Strings.SeeBtnText, runnable: openPrivacyPolicy
                             )
+                            Text("version: \(version)")
+                                .padding(.top, 10)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
                         .padding()
                     }
-                    Text("version: \(version)")
-                        .padding(.bottom, 10)
-                        .padding(.trailing, 20)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                 }
             }
             .tabItem {
